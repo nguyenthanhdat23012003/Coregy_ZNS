@@ -2,8 +2,15 @@
 import { useState, useEffect } from "react";
 import * as XLSX from "xlsx";
 
+interface Student {
+  phone: string;
+  customer_name: string;
+  order_code: string;
+  order_date: string;
+}
+
 export default function StudentsPage() {
-  const [students, setStudents] = useState([]);
+  const [students, setStudents] = useState<Student[]>([]);
 
   // Load danh sách học viên từ localStorage khi trang mở
   useEffect(() => {

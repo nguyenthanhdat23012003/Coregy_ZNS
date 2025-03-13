@@ -2,7 +2,14 @@
 import { useState, useEffect } from "react";
 
 export default function CampaignsPage() {
-  const [students, setStudents] = useState([]);
+  interface Student {
+    phone: string;
+    customer_name: string;
+    order_code: string;
+    order_date: string;
+  }
+
+  const [students, setStudents] = useState<Student[]>([]);
   const [templateId, setTemplateId] = useState("");
   const [sending, setSending] = useState(false);
 
