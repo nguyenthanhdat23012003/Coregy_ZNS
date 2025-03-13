@@ -22,7 +22,7 @@ export default function CampaignsPage() {
   }, []);
 
   // Gửi API ZNS
-  const sendZNS = async (student: any) => {
+  const sendZNS = async (student: Student) => {
     const accessToken = localStorage.getItem("access_token");
     if (!accessToken) {
       alert("Không tìm thấy Access Token!");
@@ -65,6 +65,7 @@ export default function CampaignsPage() {
       }
     } catch (error) {
       alert("Lỗi khi gửi yêu cầu đến Zalo API!");
+      console.error(error);
     }
     setSending(false);
   };
