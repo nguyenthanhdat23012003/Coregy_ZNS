@@ -88,7 +88,7 @@ export default function CampaignsPage() {
           </label>
           <input
             type="text"
-            className="w-full p-3 border border-gray-300 rounded-md text-gray-900 focus:ring-2 focus:ring-blue-500 focus:outline-none"
+            className="w-full p-3 border border-gray-300 rounded-md text-gray-900 focus:ring-2 focus:ring-gray-500 focus:outline-none"
             value={templateId}
             onChange={(e) => setTemplateId(e.target.value)}
             placeholder="Nhập Template ID..."

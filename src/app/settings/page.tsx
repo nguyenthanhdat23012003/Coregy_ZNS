@@ -39,7 +39,7 @@ export default function SettingsPage() {
           </label>
           <input
             type="text"
-            className="mx-6 w-max-lg p-3 border border-gray-300 rounded-lg text-gray-900 focus:ring-2 focus:ring-blue-500 focus:outline-none"
+            className="mx-6 w-max p-3 border border-gray-300 rounded-lg text-gray-900 focus:ring-2 focus:ring-gray-500 focus:outline-none"
             value={accessToken}
             onChange={(e) => setAccessToken(e.target.value)}
             placeholder="Nhập Access Token..."

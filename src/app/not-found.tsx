@@ -1,5 +1,4 @@
-import { Link } from "lucide-react";
-
+"use client";
 export default function NotFoundPage() {
   return (
     <div className="h-screen flex flex-col items-center justify-center bg-gray-100 text-gray-900">
@@ -9,12 +8,12 @@ export default function NotFoundPage() {
       <p className="text-lg text-gray-600 mb-6">
         Vui lòng quay lại sau khi ứng dụng hoàn thiện.
       </p>
-      <Link
-        href="/"
+      <button
+        onClick={() => window.location.replace("/")}
         className="px-6 py-2 bg-gray-800 text-white rounded-md hover:bg-gray-900 transition"
       >
         Quay lại trang chủ
-      </Link>
+      </button>
     </div>
   );
 }
